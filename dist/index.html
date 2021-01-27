@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Weather App</title>
+  <meta name="description" content="Weather">
+  <meta name="author" content="SitePoint">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" 
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+
+</head>
+
+<body>
+    <div id="content">
+        <form class="search-ctn">
+            <label>
+                <input id="location-input" value="" type="search" name="loc-search" 
+                    placeholder="Search location" autocomplete="off" required>
+            </label>
+            <input class="search-btn" value="Search" type="submit"></input> 
+        </form>
+
+        <div class="units-switch">
+            <div class="onoffswitch">
+                <input value="metric" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="toggle" tabindex="0" checked>
+                <label class="onoffswitch-label" for="toggle">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+        </div>
+
+        <form class="main-ctn">
+            <div class="loader"></div>
+            <div class="error-ctn">
+                <label>Something went wrong...</label>
+                <p>Try to refresh the page or search for a location again.</p>
+            </div>
+            <section class="main-info-ctn">
+                <h2 class="city-info"></h2>
+                <p class="sky-cond"></p>
+                <h1 class="temp-info"></h1>
+
+                <div class="min-max-temp-ctn">
+                    <p class="min-temp"></p>
+                    <p class="max-temp"></p>
+                </div>
+            </section>
+        
+            <section class="details-info-ctn">
+                <div class="details-item">
+                    <p>Feels Like</p>
+                    <h1 class="feels-like"></h1>
+                </div>
+                <div class="details-item">
+                    <p>Humidity</p>
+                    <h1 class="humidity"></h1>
+                </div>
+                <div class="details-item">
+                    <p>Visibility</p>
+                    <h1 class="visibility"></h1>
+                </div>
+                <div class="details-item">
+                    <p>Cloudiness</p>
+                    <h1 class="clouds"></h1>
+                </div>
+                <div class="details-item">
+                    <p>Wind</p>
+                    <h1 class="wind"></h1>
+                </div>
+                <div class="details-item">
+                    <p>Pressure</p>
+                    <h1 class="pressure"></h1>
+                </div>
+                
+            </section>
+        </form>
+
+        <footer>
+            <p>Created by</p>
+            <a href="https://github.com/Gkuzin13">
+              <div class="git-logo"></div>
+            </a>  
+        </footer>
+    </div>
+  <script src="/dist/main.js"></script>
+</body>
+</html>

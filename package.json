@@ -1,0 +1,21 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cli": "^1.0.1",
+    "css-loader": "^5.0.1",
+    "moment": "^2.29.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.17.0"
+  },
+  "dependencies": {}
+}
