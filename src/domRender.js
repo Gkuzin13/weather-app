@@ -1,7 +1,8 @@
 export function renderLoader(loading) {
     const mainCtn = document.querySelector('.main-ctn');
-    mainCtn.children[1].style.display = 'none';
     
+    mainCtn.children[1].style.display = 'none';
+
     const loader = document.querySelector('.loader');
 
     if (loading) {

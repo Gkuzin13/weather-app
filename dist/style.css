@@ -36,7 +36,7 @@ fieldset {
     left: 0.5rem;
     top: 0.25rem;
     bottom: 0;
-    background: url(/src/img/search-black-48dp.svg);
+    background: url(img/search-black-48dp.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -264,7 +264,7 @@ footer {
 }
 
 .git-logo {
-    background: url(/src/img/git-img.png);
+    background: url(img/git-img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
