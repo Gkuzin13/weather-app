@@ -67,7 +67,7 @@ fieldset {
 }
 
 .search-ctn {
-    padding-top: 2em;
+    padding-top: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,13 +177,13 @@ fieldset {
     top: 0;
     bottom: 0;
     right: 2rem;
-    border: 3.5px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
     transition: all 0.3s ease-in 0s;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
 }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
