@@ -3,6 +3,21 @@ import { renderWeatherC,
          renderLoader,
          renderErrorMsg } from './domRender'
 
+
+// Gets users location using ipapi
+(async function () {
+  try {
+    const response = await fetch('https://ipapi.co/json/'); 
+    
+    const userLocation = await response.json();
+
+    localStorage.setItem("currentLocation", JSON.stringify(userLocation.city));
+    
+  } catch (error) {
+    renderErrorMsg();
+  };
+})();
+
 async function getCurrentWeather() {
 
     const unit = document.getElementById('toggle').value;
@@ -36,6 +51,8 @@ async function getCurrentWeather() {
     };
 };
 
+getCurrentWeather();
+
 const findBtn = document.querySelector('.search-ctn')
 .addEventListener('submit', e => {
     e.preventDefault();
@@ -59,5 +76,3 @@ const unitsToggleBtn = document.getElementById('toggle')
         getCurrentWeather();
     };
 });
-
-getCurrentWeather();
